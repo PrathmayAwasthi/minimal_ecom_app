@@ -18,6 +18,9 @@ class ShopPage extends StatelessWidget {
         elevation: 0,
         title: Text("S H O P"),
         centerTitle: true,
+        actions: [
+          IconButton(onPressed: () => Navigator.pushReplacementNamed(context, '/cart_page'), icon: Icon(Icons.shopping_cart))
+        ],
       ),
       drawer: MyDrawer(),
       body: ListView(

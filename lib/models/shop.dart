@@ -4,14 +4,34 @@ import 'package:minimal_ecom_app/models/product.dart';
 class Shop extends ChangeNotifier {
   // products for sale
   final List<Product> _shop = [
-    Product(name: "Shoe", price: 230.0, description: "Oh this is a very nice pair of shoes you should totally buy them you know blah blah blah."),
-    Product(name: "Hat", price: 2300.0, description: "Oh this is a very nice hat you should totally buy it you know blah blah blah."),
+    Product(
+      name: "Shoe",
+      price: 7600.00,
+      description:
+          "Oh this is a very nice pair of shoes you should totally buy them you know blah blah blah.",
+      imagePath: "assets/images/shoes.png",
+    ),
+    Product(
+      name: "Hat",
+      price: 230.00,
+      description:
+          "Oh this is a very nice hat you should totally buy it you know blah blah blah.",
+      imagePath: "assets/images/hat.png",
+    ),
     Product(
       name: "Glasses",
-      price: 2130.0,
-      description: "Oh this is a very nice pair of glasses you should totally buy them you know blah blah blah.",
+      price: 2130.50,
+      description:
+          "Oh this is a very nice pair of glasses you should totally buy them you know blah blah blah.",
+      imagePath: "assets/images/glasses.png",
     ),
-    Product(name: "Watch", price: 230.05, description: "Oh this is a very watch you should totally buy it you know blah blah blah."),
+    Product(
+      name: "Watch",
+      price: 1809.50,
+      description:
+          "Oh this is a very watch you should totally buy it you know blah blah blah.",
+      imagePath: "assets/images/watch.png",
+    ),
   ];
 
   // user cart

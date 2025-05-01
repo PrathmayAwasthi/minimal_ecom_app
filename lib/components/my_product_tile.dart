@@ -55,10 +55,13 @@ class MyProductTile extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Theme.of(context).colorScheme.tertiary,
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(12),
                     ),
                     width: double.infinity,
-                    child: Icon(Icons.favorite),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(product.imagePath),
+                    ),
                   ),
                 ),
 
